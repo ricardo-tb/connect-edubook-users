@@ -7,8 +7,6 @@ import {connect_api, connect_token} from './../functions/connect.js';
 
 describe("test",function(){
 
-	// 0c8c0cf4-74d7-4b59-b28f-0b115dbd2c3d
-	// 
 	var _token;
 
     before(done =>{
