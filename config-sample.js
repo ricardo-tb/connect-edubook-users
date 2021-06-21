@@ -1,8 +1,8 @@
 
 export default {
-	api:{
-		username :'xxxxxx',
-		password :'xxxxxx'
+	client:{
+		id :'xxxxxx',
+		secret :'xxxxxx'
 	},
 	user:{
 		username :'xxxxxx',
