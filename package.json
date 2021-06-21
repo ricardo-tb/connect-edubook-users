@@ -1,0 +1,17 @@
+{
+  "name": "User test",
+  "version": "0.0.01",
+  "description": "test for users in vicensvivesdigital",
+  "author": "Ricardo Torres",
+  "scripts": {
+    "test": "NODE_ENV=test mocha 'test/*.test.js' --timeout 10000"
+  },
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.0",
+    "mocha-jsdom": "^2.0.0"
+  }
+}
