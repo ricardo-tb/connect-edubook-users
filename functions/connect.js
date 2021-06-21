@@ -4,8 +4,8 @@ import miFetch from './miFetch.js';
 
 function connect_api($user, $pass){
     return new Promise((resolve, reject) => {
-        let api_username = config.api.username;
-        let api_password = config.api.password;
+        let client_id = config.client.id;
+        let client_secret = config.client.secret;
         let url = 'http://user.vicensvivesdigital.com/oauth/token';
         const params = new URLSearchParams();
         params.append("grant_type", "password");
@@ -14,7 +14,7 @@ function connect_api($user, $pass){
         let hdrs = {};
         let tokenHeader = 'Authorization';
         // basic auth
-        hdrs[tokenHeader] = 'Basic ' + Buffer.from(`${api_username}:${api_password}`, 'binary').toString('base64')
+        hdrs[tokenHeader] = 'Basic ' + Buffer.from(`${client_id}:${client_secret}`, 'binary').toString('base64')
         hdrs['Content-Type'] = 'application/x-www-form-urlencoded';
         let opts = {
             method: 'POST',
