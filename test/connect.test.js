@@ -36,7 +36,7 @@ describe("test",function(){
 
 			let t = {
 				token_type : doc.token_type,
-				scope : doc. scope
+				scope : doc.scope
 			}
 			assert.deepEqual(res, t);
 			done()
@@ -81,11 +81,11 @@ describe("test",function(){
 
 			console.log('+++++', doc)
 
-      		assert.deepEqual(res, doc);
-    		done()
-    	}, (error) => {
-            console.error("[ERROR] connect_token: ", error);
-        });
+      			assert.deepEqual(res, doc);
+    			done()
+    		}, (error) => {
+            		console.error("[ERROR] connect_token: ", error);
+        	});
 	});
 
 });
